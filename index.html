@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Words of Activation</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,800;112,900&family=Karla:wght@400;500;700&display=swap">
+<style>
+:root {
+  --ground: #1d1d1f;
+  --panel: #27272a;
+  --line: #3a3934;
+  --gold: #eab84a;
+  --ink: #f5f1e6;
+  --muted: #b3ada0;
+  --display: "Archivo", "Arial Black", Impact, sans-serif;
+  --body: "Karla", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+html,body{margin:0} body { background: var(--ground); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.5; }
+.wrap { max-width: 30rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 56px; display: flex; flex-direction: column; gap: 28px; }
+header { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; }
+.burst { width: 120px; height: auto; display: block; }
+.eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+h1 { margin: 0; font-family: var(--display); font-stretch: 112%; font-weight: 900; text-transform: uppercase; line-height: .95; font-size: clamp(2.4rem, 11vw, 3.4rem); text-wrap: balance; }
+h1 .top { color: var(--ink); display: block; }
+h1 .bottom { color: var(--gold); display: block; }
+.artist { font-family: var(--display); font-weight: 800; font-stretch: 112%; text-transform: uppercase; letter-spacing: .12em; font-size: 15px; color: var(--ink); }
+.meta { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.lede { margin: 0; text-align: center; color: var(--muted); max-width: 34ch; align-self: center; }
+ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+a.svc { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; color: var(--ink); text-decoration: none; transition: border-color .15s, background .15s; }
+a.svc:hover { border-color: var(--gold); }
+a.svc:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.svc .name { font-weight: 700; font-size: 17px; }
+.svc .what { display: block; font-size: 13px; color: var(--muted); font-weight: 400; }
+.svc .go { flex: none; font-family: var(--display); font-stretch: 112%; font-weight: 800; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ground); background: var(--gold); padding: 8px 12px; border-radius: 6px; }
+a.svc:hover .go { background: var(--ink); }
+footer { text-align: center; color: var(--muted); font-size: 13px; }
+</style>
+</head><body>
+<main class="wrap">
+  <header>
+    <svg class="burst" viewBox="0 0 500 511" aria-hidden="true"><path fill="#eab84a" d="M464 502L464 492L468 492L471 492L471 490L470 488L460 488L450 488L450 490L450 492L454 492L458 492L458 502L458 511L461 511L464 511L464 502ZM479 505L479 498L482 504C484 507 486 509 486 509C487 509 489 507 491 504L494 498L494 505L494 511L497 511L500 511L500 499L500 488L497 487L495 487L491 494C489 498 487 501 487 501C486 501 484 498 482 494L478 487L476 487L474 488L473 499L473 511L476 511L479 511L479 505ZM58 494C61 492 67 484 73 477C79 471 90 457 99 448C108 438 119 424 125 418C131 411 149 389 166 370C184 350 199 332 202 329C204 326 206 324 206 324C206 324 205 336 203 350C201 365 199 379 198 381C198 383 197 390 196 394C196 399 195 406 194 408C194 411 193 418 192 422C192 427 191 434 190 436C190 438 189 445 189 450C188 454 187 461 187 464C186 466 185 473 185 478C184 482 183 489 182 493L182 499L204 499L227 499L227 497C228 496 228 492 229 487C230 482 231 472 232 465C233 458 234 450 235 448C235 446 238 422 242 396C250 340 251 334 251 332C251 328 252 331 267 362C274 379 285 404 292 418C298 431 308 452 313 464C318 476 324 489 326 492L329 499L342 499C354 499 370 497 375 495L377 494L367 472C361 460 352 440 346 428C331 393 311 349 301 329C297 319 294 311 294 312C296 313 338 340 358 352C367 358 377 365 381 367C384 369 396 377 408 385C421 393 433 401 437 403C440 405 449 411 457 416C465 421 472 425 473 425L474 426L480 414C486 403 492 389 492 386L492 384L474 373C464 367 425 341 387 317L318 272L409 272L500 272L500 250L500 227L409 227L318 226L346 208C362 199 385 183 399 174C413 166 439 149 458 137C477 125 492 114 492 113C492 109 479 81 475 75L473 73L384 130C334 162 294 188 294 188C293 188 298 178 303 166C309 154 323 122 336 96C348 69 362 37 367 26C373 14 376 5 376 5C373 3 350 0 341 0L329 0L328 4C327 6 321 18 315 30C310 42 300 63 294 76C288 90 276 116 268 134C260 152 253 168 252 168C252 169 250 160 249 149C247 138 245 124 244 117C243 110 241 98 240 90C239 81 237 69 236 62C234 48 231 26 229 12C228 8 228 3 227 2L227 0L204 0L182 0L182 6C183 10 184 17 184 22C185 26 186 33 186 36C187 38 188 45 188 50C189 54 190 61 191 64C191 66 192 73 193 78C193 82 194 89 195 92C195 94 196 101 197 106C197 110 198 117 198 119C199 121 200 128 200 132C201 137 202 144 202 147C203 150 204 157 205 163C206 170 206 175 206 175C206 175 202 171 198 167C194 162 186 153 180 145C174 138 160 123 150 111C125 82 114 69 96 49C88 39 75 25 68 16L54 0L27 0L0 0L0 4L0 7L15 25C24 35 34 46 38 51C42 56 58 74 74 92C89 110 106 130 112 136C118 143 129 157 138 166C167 200 172 205 172 206C172 206 160 202 146 198C132 194 112 188 100 185C90 182 73 177 63 174C53 171 44 168 42 168C41 168 32 165 22 162C12 159 3 157 2 156L0 156L0 179L0 203L2 203C3 204 21 209 42 215C90 229 121 238 132 241C136 243 144 245 149 247C154 248 159 249 159 250C159 250 155 251 151 252C143 255 48 283 14 292L0 296L0 320L0 344L1 344C2 343 12 340 23 337C75 322 86 319 92 317C95 316 98 315 100 315C102 314 116 310 149 300C161 297 170 294 171 294C171 295 167 300 161 306C156 312 147 323 141 329C135 336 124 350 115 359C106 369 95 383 89 390C59 424 23 467 22 467C22 467 16 473 11 480L0 492L0 496L0 499L27 499L54 499L58 494Z"/></svg>
+    <span class="eyebrow">The new album</span>
+    <h1><span class="top">Words of</span><span class="bottom">Activation</span></h1>
+    <span class="artist">Demia Kandi</span>
+    <span class="meta">10 songs | 27 min | 2026</span>
+  </header>
+  <p class="lede">Choose your favorite platform to stream, save, or download the album.</p>
+  <ul>
+    <li><a class="svc" href="https://music.apple.com/us/album/words-of-activation/1895927638" target="_blank" rel="noopener"><span><span class="name">Apple Music</span><span class="what">Stream or buy on iTunes</span></span><span class="go">Listen</span></a></li>
+    <li><a class="svc" href="https://open.spotify.com/album/03nDCXzKusDvmWjkqVdk4d" target="_blank" rel="noopener"><span><span class="name">Spotify</span><span class="what">Stream and save to your library</span></span><span class="go">Listen</span></a></li>
+    <li><a class="svc" href="https://music.youtube.com/playlist?list=OLAK5uy_k_kxoVzugQoy2DF6XIbK_ldO4QlchTzKs" target="_blank" rel="noopener"><span><span class="name">YouTube Music</span><span class="what">Stream the full album</span></span><span class="go">Listen</span></a></li>
+    <li><a class="svc" href="https://www.youtube.com/playlist?list=OLAK5uy_k_kxoVzugQoy2DF6XIbK_ldO4QlchTzKs" target="_blank" rel="noopener"><span><span class="name">YouTube</span><span class="what">Watch the album playlist</span></span><span class="go">Watch</span></a></li>
+    <li><a class="svc" href="https://music.amazon.com/albums/B0GZ4HRV4X" target="_blank" rel="noopener"><span><span class="name">Amazon Music</span><span class="what">Stream or buy the album</span></span><span class="go">Listen</span></a></li>
+    <li><a class="svc" href="https://tidal.com/album/520388319" target="_blank" rel="noopener"><span><span class="name">TIDAL</span><span class="what">Stream in high fidelity</span></span><span class="go">Listen</span></a></li>
+    <li><a class="svc" href="https://www.deezer.com/us/album/972961001" target="_blank" rel="noopener"><span><span class="name">Deezer</span><span class="what">Stream the full album</span></span><span class="go">Listen</span></a></li>
+    <li><a class="svc" href="https://www.iheart.com/artist/demia-kandi-50584834/albums/words-of-activation-398477761/" target="_blank" rel="noopener"><span><span class="name">iHeartRadio</span><span class="what">Stream the full album</span></span><span class="go">Listen</span></a></li>
+  </ul>
+  <footer>Released April 29, 2026</footer>
+</main>
+</body></html>
