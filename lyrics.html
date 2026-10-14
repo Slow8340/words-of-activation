@@ -19,11 +19,11 @@ header.hero{display:flex;flex-direction:column;align-items:center;text-align:cen
 h1{margin:0;font-family:var(--display);font-stretch:112%;font-weight:900;text-transform:uppercase;line-height:.95;font-size:clamp(2.3rem,10vw,3.2rem)}
 h1 .a{display:block} h1 .b{display:block;color:var(--gold)}
 .artist{font-family:var(--display);font-weight:800;font-stretch:112%;text-transform:uppercase;letter-spacing:.12em;font-size:15px}
-.cue{margin:4px 0 0;color:var(--muted);max-width:34ch;font-size:15px}
+.cue{margin:4px 0 0;color:var(--muted);max-width:34ch;font-size:15px;text-wrap:balance}
 .cue b{color:var(--ink);font-weight:700}
 nav{padding:24px 0 8px}
 nav h3{margin:0 0 12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-nav ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+nav ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:8px}
 nav a{display:flex;gap:10px;align-items:baseline;padding:11px 13px;background:var(--panel);border:1px solid var(--line);border-radius:9px;color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;line-height:1.25}
 nav a:hover{border-color:var(--gold)}
 nav a:focus-visible,.top:focus-visible,.listen:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
@@ -40,7 +40,8 @@ h2{margin:0;font-family:var(--display);font-stretch:112%;font-weight:900;text-tr
 .listen{display:inline-block;font-family:var(--display);font-stretch:112%;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ground);background:var(--gold);padding:11px 16px;border-radius:7px;text-decoration:none}
 .listen:hover{background:var(--ink)}
 footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
-@media (max-width:380px){nav ol{grid-template-columns:1fr}}
+@media (min-width:600px){nav ol{grid-template-columns:1fr 1fr}}
+nav a{white-space:nowrap}
 </style>
 </head><body>
 <main class="wrap" id="index">
@@ -119,7 +120,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
 <p>Because you didn&#x27;t come this far just to survive. You thrive! Out here lookin&#x27; Rooftop Fly. And whatever the stress of the week, leave that behind. Out here lookin&#x27; Rooftop Fly.</p>
 <p>And now the night is doing what it does. Music sliding in like velvet. City lights blinking like, &quot;Beep beep.&quot; That first laugh breaking through your chest like you just got your breath back.</p>
 <p>Good friends. Good vibe. The kind of room where you don&#x27;t have to explain yourself, because you know you already belong.</p>
-<p>And somewhere between the playlist and the skyline, as you hear your favorite song, you start to remember that you’ve still got it.</p>
+<p>And somewhere between the playlist and the skyline, as you hear your favorite song, you start to remember that you've still got it.</p>
 <p>Because you didn&#x27;t come this far to survive. You thrive. Out here lookin&#x27; Rooftop Fly. And although you make it look easy, you need to revive! Out here lookin&#x27; Rooftop Fly.</p>
 <p>So tonight, we laugh. We normalize levity, while leaving the week behind us. Not as escape, as balance. Not as performance, as permission. We know life is short, and we refuse to work this hard and never feel light.</p>
 <p>Because you didn&#x27;t come this far to survive. You thrive. Out here lookin&#x27; Rooftop Fly. No more holding back this year, this is your time! Out here lookin&#x27; Rooftop Fly.</p>
